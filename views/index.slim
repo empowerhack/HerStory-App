@@ -1,0 +1,12 @@
+html lang="en"
+  head
+    title HerStory
+  body
+    h1 HerStory
+    p Share your story:
+
+    form action="/submit" method="POST"
+      input type="text" name="story[title]" value="Enter title"
+      input type="text" name="story[story]" value="Enter your story"
+
+      input type="submit" value="Share"
