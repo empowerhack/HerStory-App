@@ -1,12 +1,15 @@
-html lang="en"
-  head
-    title HerStory
-  body
-    h1 HerStory
-    p Share your story:
+h1 HerStory
+p What does it mean to post? 
+p What will happen when you post?
+p What to do after your share your story?
 
-    form action="/submit" method="POST"
-      input type="text" name="story[title]" value="Enter title"
-      input type="text" name="story[story]" value="Enter your story"
-
-      input type="submit" value="Share"
+form action="/submit" method="POST"
+  .form-group
+    label for="title" Title
+    input.form-control type="text" name="story[title]" value="Enter title" id="title"
+  .form-group
+    label for="story" Your story
+    textarea.form-control rows="5" type="text" name="story[story]" value="Enter your story" id="story"
+  .row
+    .col-xs-12
+      input.btn.btn-primary.col-xs-12 type="submit" value="Share your story"
