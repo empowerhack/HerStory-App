@@ -1,0 +1,11 @@
+doctype html
+html locale="en" xml:lang="en" lang="en"
+  head
+    == slim :'components/_head'
+
+  body
+    #content
+      == yield
+    
+    footer
+      == slim :'components/_footer'
