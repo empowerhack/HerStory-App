@@ -2,4 +2,4 @@ h1 Stories
 
 ul
   - @stories.each do |story|
-    li #{story.title}
+    li: a href="#{story.id}" #{story.title}

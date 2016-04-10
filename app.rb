@@ -21,5 +21,12 @@ end
 
 get '/stories' do
 	@stories = Story.all
+	
 	slim :stories
+end
+
+get '/:id' do
+	@story = Story.find(params[:id])
+
+	slim :story
 end
